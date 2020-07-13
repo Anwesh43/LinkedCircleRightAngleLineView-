@@ -30,8 +30,8 @@ fun Canvas.drawCircleRightAngleLine(i : Int, scale : Float, w : Float, h : Float
     val sf1 : Float = sf.divideScale(0, parts)
     val sf2 : Float = sf.divideScale(1, parts)
     val sf3 : Float = sf.divideScale(2, parts)
-    val x : Float = w * sf3
-    val y : Float = (h / 2) * sf2
+    val x : Float = (w - 2 * r) * sf3
+    val y : Float = (h / 2 - r) * sf2
     save()
     translate(r, h / 2)
     scale(1f, 1f - 2 * i)
