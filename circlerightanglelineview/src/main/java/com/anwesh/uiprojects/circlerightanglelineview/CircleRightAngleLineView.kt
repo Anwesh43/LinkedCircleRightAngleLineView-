@@ -205,4 +205,13 @@ class CircleRightAngleLineView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : CircleRightAngleLineView {
+            val view : CircleRightAngleLineView = CircleRightAngleLineView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
